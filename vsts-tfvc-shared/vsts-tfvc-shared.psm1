@@ -106,9 +106,11 @@ function Get-SourceProvider {
     try {
         if ($provider.Name -eq 'TfsVersionControl') {
             $serviceEndpoint = Get-ServiceEndpoint -Context $distributedTaskContext -Name $env:BUILD_REPOSITORY_NAME
+            
+            # Bypass normal function to get to the credentials to work around bug in current vNext client
             $tfsClientCredentials = New-Object Microsoft.TeamFoundation.Client.TfsClientCredentials($false)
             $tfsClientCredentials.AllowInteractive = $false
-            $tfsClientCredentials.Federated = Get-TfsClientCredentials -ServiceEndpoint $serviceEndpoint
+            $tfsClientCredentials.Federated = (New-Object Microsoft.TeamFoundation.Client.OAuthTokenCredential([string]$serviceEndpoint.Authorization.Parameters['AccessToken']))
 
             
             $provider.TfsTeamProjectCollection = New-Object Microsoft.TeamFoundation.Client.TfsTeamProjectCollection(
