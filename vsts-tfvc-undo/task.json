@@ -68,6 +68,9 @@
       "target": "$(currentDirectory)\\TfvcUndo.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(Build.SourcesDirectory)"
+    },
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\TfvcUndo.v3.ps1"
     }
   }
 }

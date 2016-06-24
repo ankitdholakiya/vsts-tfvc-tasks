@@ -87,6 +87,9 @@
       "target": "$(currentDirectory)\\TfvcUpdateShelveset.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(Build.SourcesDirectory)"
+    },
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\TfvcUpdateShelveset.v3.ps1"
     }
   }
 }

@@ -63,6 +63,9 @@
       "target": "$(currentDirectory)\\TfvcDelete.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(Build.SourcesDirectory)"
+    },
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\TfvcDelete.v3.ps1"
     }
   }
 }

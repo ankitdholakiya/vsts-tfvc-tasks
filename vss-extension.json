@@ -55,84 +55,93 @@
     "icons":  {
                   "default":  "extension/images/extension-icon.png"
               },
-    "files": [
-        {
-            "path": "vsts-tfvc-add/TfvcAdd.ps1"
-        },
-        {
-            "path": "vsts-tfvc-add/vsts-tfvc-shared.psm1",
-            "contentType": "text/plain"
-        },
-        {
-            "path": "vsts-tfvc-add/task.json"
-        },
-        {
-            "path": "vsts-tfvc-add/icon.png"
-        },
+  "files": [
+    {
+      "path": "vsts-tfvc-add/TfvcAdd.ps1"
+    },
+    {
+      "path": "vsts-tfvc-add/TfvcAdd.v3.ps1"
+    },
+    {
+      "path": "vsts-tfvc-add/task.json"
+    },
+    {
+      "path": "vsts-tfvc-add/icon.png"
+    },
+    {
+      "path": "vsts-tfvc-add/ps_modules"
+    },
 
 
 
-        {
-            "path": "vsts-tfvc-checkin/TfvcCheckin.ps1"
-        },
-        {
-            "path": "vsts-tfvc-checkin/vsts-tfvc-shared.psm1",
-            "contentType": "text/plain"
-        },
-        {
-            "path": "vsts-tfvc-checkin/task.json"
-        },
-        {
-            "path": "vsts-tfvc-checkin/icon.png"
-        },
+    {
+      "path": "vsts-tfvc-checkin/TfvcCheckin.ps1"
+    },
+    {
+      "path": "vsts-tfvc-checkin/TfvcCheckin.v3.ps1"
+    },
+    {
+      "path": "vsts-tfvc-checkin/task.json"
+    },
+    {
+      "path": "vsts-tfvc-checkin/icon.png"
+    },
+    {
+      "path": "vsts-tfvc-checkin/ps_modules"
+    },
 
 
 
-        {
-            "path": "vsts-tfvc-delete/TfvcDelete.ps1"
-        },
-        {
-            "path": "vsts-tfvc-delete/vsts-tfvc-shared.psm1",
-            "contentType": "text/plain"
-        },
-        {
-            "path": "vsts-tfvc-delete/task.json"
-        },
-        {
-            "path": "vsts-tfvc-delete/icon.png"
-        },
+    {
+      "path": "vsts-tfvc-delete/TfvcDelete.ps1"
+    },
+    {
+      "path": "vsts-tfvc-delete/TfvcDelete.v3.ps1"
+    },
+    {
+      "path": "vsts-tfvc-delete/task.json"
+    },
+    {
+      "path": "vsts-tfvc-delete/icon.png"
+    },
+    {
+      "path": "vsts-tfvc-delete/ps_modules"
+    },
 
 
+    {
+      "path": "vsts-tfvc-undo/TfvcUndo.ps1"
+    },
+    {
+      "path": "vsts-tfvc-undo/TfvcUndo.v3.ps1"
+    },
+    {
+      "path": "vsts-tfvc-undo/task.json"
+    },
+    {
+      "path": "vsts-tfvc-undo/icon.png"
+    },
+    {
+      "path": "vsts-tfvc-undo/ps_modules"
+    },
 
-        {
-            "path": "vsts-tfvc-undo/TfvcUndo.ps1"
-        },
-        {
-            "path": "vsts-tfvc-undo/vsts-tfvc-shared.psm1",
-            "contentType": "text/plain"
-        },
-        {
-            "path": "vsts-tfvc-undo/task.json"
-        },
-        {
-            "path": "vsts-tfvc-undo/icon.png"
-        },
+    {
+      "path": "vsts-tfvc-updateshelveset/TfvcUpdateShelveset.ps1"
+    },
+    {
+      "path": "vsts-tfvc-updateshelveset/TfvcUpdateShelveset.v3.ps1"
+    },
+    {
+      "path": "vsts-tfvc-updateshelveset/task.json"
+    },
+    {
+      "path": "vsts-tfvc-updateshelveset/icon.png"
+    },
+    {
+      "path": "vsts-tfvc-updateshelveset/ps_modules"
+    }
 
-        {
-            "path": "vsts-tfvc-updateshelveset/TfvcUpdateShelveset.ps1"
-        },
-        {
-            "path": "vsts-tfvc-updateshelveset/vsts-tfvc-shared.psm1",
-            "contentType": "text/plain"
-        },
-        {
-            "path": "vsts-tfvc-updateshelveset/task.json"
-        },
-        {
-            "path": "vsts-tfvc-updateshelveset/icon.png"
-        }
-
-    ],
+  ],
     "contributions": [
         {
             "id": "vsts-tfvc-add",
@@ -170,9 +179,9 @@
             "targets": [
                 "ms.vss-distributed-task.tasks"
             ],
-            "properties": {
-                "name": "vsts-tfvc-undo"
-            }
+          "properties": {
+            "name": "vsts-tfvc-undo"
+          }
         },
         {
             "id": "vsts-tfvc-updateshelveset",
