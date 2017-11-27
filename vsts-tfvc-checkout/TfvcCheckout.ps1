@@ -2,7 +2,7 @@
 param(
     [Parameter(Mandatory=$true)]
     [ValidateNotNullOrEmpty()]
-    [string] $Itemspec = "$/",
+    [string] $Itemspec = "$/*",
     [ValidateSet("None", "Full", "OneLevel")]
     [string] $Recursion = "None",
     [ValidateSet($true, $false, "")]
